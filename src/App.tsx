@@ -11,8 +11,9 @@ function App(): React.JSX.Element {
             </header>
             <h1>Hello World</h1>
             <img src={dog} alt="A picture of a dog" />
-            Why I Like This Dog
+
             <ul>
+                Why I Like This Dog
                 <li>Its Cute</li>
                 <li>Its Fluffy</li>
                 <li>Its A Dog</li>
