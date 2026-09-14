@@ -1,7 +1,11 @@
 import React from "react";
 import "./App.css";
-import dog from "./Assets/images/dog.jpeg";
-import { Button, Container, Row, Col } from "react-bootstrap";
+import { ChangeType } from "./components/ChangeType";
+import { RevealAnswer } from "./components/RevealAnswer";
+import { StartAttempt } from "./components/StartAttempt";
+import { TwoDice } from "./components/TwoDice";
+import { CycleHoliday } from "./components/CycleHoliday";
+import { Counter } from "./components/Counter";
 
 function App(): React.JSX.Element {
     return (
@@ -9,49 +13,18 @@ function App(): React.JSX.Element {
             <header className="App-header">
                 James Whelan UD CISC275 with React Hooks and TypeScript
             </header>
-            <h1>Hello World</h1>
-            <img src={dog} alt="A picture of a dog" />
-
-            <ul>
-                Why I Like This Dog
-                <li>Its Cute</li>
-                <li>Its Fluffy</li>
-                <li>Its A Dog</li>
-            </ul>
-            <Button
-                onClick={() => {
-                    console.log("Hello World!");
-                }}
-            >
-                Log Hello World
-            </Button>
-            <Container>
-                <Row>
-                    <Col>
-                        <div
-                            style={{
-                                width: "100px",
-                                height: "100px",
-                                backgroundColor: "red",
-                            }}
-                        ></div>
-                    </Col>
-
-                    <Col>
-                        <div
-                            style={{
-                                width: "100px",
-                                height: "100px",
-                                backgroundColor: "red",
-                            }}
-                        ></div>
-                    </Col>
-                </Row>
-            </Container>
-            <p>
-                Edit <code>src/App.tsx</code> and save. This page will
-                automatically reload.
-            </p>
+            <hr></hr>
+            <Counter></Counter>
+            <hr />
+            <RevealAnswer></RevealAnswer>
+            <hr />
+            <StartAttempt></StartAttempt>
+            <hr />
+            <TwoDice></TwoDice>
+            <hr />
+            <ChangeType></ChangeType>
+            <hr />
+            <CycleHoliday></CycleHoliday>
         </div>
     );
 }
