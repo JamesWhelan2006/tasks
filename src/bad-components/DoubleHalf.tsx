@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { Button } from "react-bootstrap";
 
 function Doubler({
-    dhValue,
     setDhValue,
 }: {
     dhValue: number;
@@ -20,7 +19,6 @@ function Doubler({
 }
 
 function Halver({
-    dhValue,
     setDhValue,
 }: {
     dhValue: number;
